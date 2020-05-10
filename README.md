@@ -31,18 +31,18 @@ Packages may not install under certain network conditions. If packages do not in
 If available memory is a concern, search #memoryManagement and uncomment rm() functions to increase memory availability during processing
 
 __Input files:__
-  -'features.txt': List of all features (column names).
-  -'activity_labels.txt': Links the class labels with their activity name (activity lookup table).
-  -'train/X_train.txt': Training set (dataset).
-  -'train/y_train.txt': Training labels (activiy values).
-  -'test/X_test.txt': Test set (dataset).
-  -'test/y_test.txt': Test labels (activity values).
-  -'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30 (subjectIDs). 
-  -'test/subject_test.txt': as in subject_train but pairs with test data.
+  - 'features.txt': List of all features (column names).
+  - 'activity_labels.txt': Links the class labels with their activity name (activity lookup table).
+  - 'train/X_train.txt': Training set (dataset).
+  - 'train/y_train.txt': Training labels (activiy values).
+  - 'test/X_test.txt': Test set (dataset).
+  - 'test/y_test.txt': Test labels (activity values).
+  - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30 (subject IDs). 
+  - 'test/subject_test.txt': as in subject_train but pairs with test data (subject IDs).
 
 __Output:__
-  -'HAR_summary.txt': Mean and standard deviation measurements averaged by 'subject' & 'activity'
-  -'HAR_means-std.txt': Original mean and standard deviation measurements 
+  - 'HAR_summary.txt': Mean and standard deviation measurements averaged by 'subject' & 'activity'
+  - 'HAR_means-std.txt': Original mean and standard deviation measurements 
 
 __Running Notes:__
 Script will generate warnings that do not impact current script function. Specifically, some column names will be automatically re-named to avoid duplicates. None of the columns affected are targeted by this analysis.
