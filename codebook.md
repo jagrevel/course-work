@@ -6,9 +6,9 @@ __Datasets summary:__
 | Name:          | Type:      | Obs.   | Variables  | Purpose                                        |
 |----------------|------------|--------|------------|------------------------------------------------|
 | activiyCodes   | tibble     | 6      | 2          | Activity lookup table                          |
-| averages       | tibble     | 10,299 | 68         | Data set satisfying condition 4 of assignment  |
-| combined       | tibble     | 10,299 | 560        | Data set satisfying condition 1- of assignment |
-| groupedSummary | tibble     | 180    | 68         | Data set satisfying condition 5 of assignmnet  |
+| averages       | tibble     | 10,299 | 68         | Intermediary dataset                           |
+| combined       | tibble     | 10,299 | 560        | Intermediary dataset                           |
+| groupedSummary | tibble     | 180    | 68         | Intermediary dataset                           |
 | testers        | tibble     | 2,947  | 1          | Imported test subject list                     |
 | testX          | tibble     | 2,947  | 560        | Imported test dataset                          |
 | testY          | tibble     | 2,947  | 1          | Imported test activity list                    |
