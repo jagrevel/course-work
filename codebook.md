@@ -28,6 +28,7 @@ __Features (column names)__
     - 'function': Statistic of feature represented, output file includes only mean and standard deviation
     - 'X|Y|Z': (optional) axial direction of measured signal
 	- Example: 'tBodyAcc-mean-Y' is the mean time-based body acceleration measured on the Y-axis 
+	- For more details see original documentation
 
 __Other Data & Values__
   - 'folder':  chr, intended file path of extracted folder "./UCI HAR Dataset"
