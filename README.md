@@ -42,7 +42,7 @@ __Input files:__
 
 __Output:__
   - 'HAR_summary.txt': Mean and standard deviation measurements averaged by 'subject' & 'activity'
-  - 'HAR_means-std.txt': Original mean and standard deviation measurements 
+  - (optional, marked as comment)'HAR_means-std.txt': Original mean and standard deviation measurements 
 
 __Running Notes:__
 Script will generate warnings that do not impact current script function. Specifically, some column names will be automatically re-named to avoid duplicates. None of the columns affected are targeted by this analysis.
