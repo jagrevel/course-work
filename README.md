@@ -24,9 +24,9 @@ Information page URL: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Reco
 
 __Running information:__
 
-Script will automatically acquire the necessary packages and data. If data acquisition fails, script will also work if the downloaded .zip folder from the link above is pre-exctracted into the working directory.
+Script will automatically acquire the necessary packages and data. If the download fails, the script will also work if the downloaded .zip folder from the link above is pre-exctracted into the working directory.
 
-If packages do not install, manually install 'dplyr', 'readr', and 'stringr' packages.
+Packages may not install under certain network conditions. If packages do not install, manually install 'dplyr', 'readr', and 'stringr' packages.
 
 If available memory is a concern, search #memoryManagement and uncomment rm() functions to increase memory availability during processing
 
