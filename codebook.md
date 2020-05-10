@@ -30,7 +30,22 @@ __Features (column names)__
 	- Example: 'tBodyAcc-mean-Y' is the mean time-based body acceleration measured on the Y-axis 
 
 __Other Data & Values__
-	- 'folder':  chr, intended file path of extracted folder "./UCI HAR Dataset"
-    - 'libList':  chr[], list of packages required for analysis
-    - 'packs': data.frame, df indicating package installation status
- 	- 'target': chr, currnt package evaluation
+  - 'folder':  chr, intended file path of extracted folder "./UCI HAR Dataset"
+  - 'libList':  chr[], list of packages required for analysis
+  - 'packs': data.frame, df indicating package installation status
+  - 'target': chr, currnt package evaluation
+    
+__Procedure Summary__
+1. Check for source data in working directory
+1. Check for necessary packages
+1. Load features from file 
+1. Load subjects from file and stack
+1. Load measurements from file with features as column names and stack in the same order as subjects (satisfies Rquirement #3)
+1. Append subjects to measurements (satisfies Requirement #1)
+1. Select only columns reporting mean() or std() (satisfies Requirement #2)
+1. Clean parenthesis
+1. Load train and test Y values as activities and stack in same order as measurements and append to dataset
+1. Assymetrically join measurements and activity lookup based on activity codes (satisfies Requirement #4)
+1. Group measurements by activity and subject
+1. Calculate averages by groups (satisfies Requirement #5)
+1. Write output files to working directory
